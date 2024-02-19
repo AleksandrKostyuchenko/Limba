@@ -5238,7 +5238,7 @@ ul.uk-nav-sub {
 /* Container
  ========================================================================== */
 .uk-navbar-container:not(.uk-navbar-transparent) {
-  background: #f8f8f8;
+  background: #fff;
 }
 /* Groups
  ========================================================================== */
@@ -5338,7 +5338,7 @@ ul.uk-nav-sub {
   column-gap: 0.25em;
   /* 3 */
   box-sizing: border-box;
-  min-height: 80px;
+  min-height: 30px;
   /* 4 */
   font-size: 0.875rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -5370,6 +5370,7 @@ ul.uk-nav-sub {
 /* Active */
 .uk-navbar-nav > li.uk-active > a {
   color: #333;
+  box-shadow: 0 1px #000000;
 }
 /* Parent icon modifier
  ========================================================================== */
@@ -8653,6 +8654,66 @@ iframe[data-uk-cover] {
 }
 .uk-flex-bottom {
   align-items: flex-end;
+}
+/* Phone landscape and bigger */
+@media (min-width: 640px) {
+  .uk-flex-stretch\@s {
+    align-items: stretch;
+  }
+  .uk-flex-top\@s {
+    align-items: flex-start;
+  }
+  .uk-flex-middle\@s {
+    align-items: center;
+  }
+  .uk-flex-bottom\@s {
+    align-items: flex-end;
+  }
+}
+/* Tablet landscape and bigger */
+@media (min-width: 960px) {
+  .uk-flex-stretch\@m {
+    align-items: stretch;
+  }
+  .uk-flex-top\@m {
+    align-items: flex-start;
+  }
+  .uk-flex-middle\@m {
+    align-items: center;
+  }
+  .uk-flex-bottom\@m {
+    align-items: flex-end;
+  }
+}
+/* Desktop and bigger */
+@media (min-width: 1200px) {
+  .uk-flex-stretch\@l {
+    align-items: stretch;
+  }
+  .uk-flex-top\@l {
+    align-items: flex-start;
+  }
+  .uk-flex-middle\@l {
+    align-items: center;
+  }
+  .uk-flex-bottom\@l {
+    align-items: flex-end;
+  }
+}
+/* Large screen and bigger */
+@media (min-width: 1600px) {
+  .uk-flex-stretch\@xl {
+    align-items: stretch;
+  }
+  .uk-flex-top\@xl {
+    align-items: flex-start;
+  }
+  .uk-flex-middle\@xl {
+    align-items: center;
+  }
+  .uk-flex-bottom\@xl {
+    align-items: flex-end;
+  }
 }
 /* Direction
  ========================================================================== */
@@ -12454,28 +12515,17 @@ iframe[data-uk-cover] {
 .uk-offcanvas-bar .uk-logo:hover {
   color: #fff;
 }
-.uk-light .uk-logo > picture:not(:only-of-type) > :not(.uk-logo-inverse),
-.uk-light .uk-logo > :not(picture):not(.uk-logo-inverse):not(:only-of-type),
-.uk-section-primary:not(.uk-preserve-color) .uk-logo > picture:not(:only-of-type) > :not(.uk-logo-inverse),
-.uk-section-primary:not(.uk-preserve-color) .uk-logo > :not(picture):not(.uk-logo-inverse):not(:only-of-type),
-.uk-section-secondary:not(.uk-preserve-color) .uk-logo > picture:not(:only-of-type) > :not(.uk-logo-inverse),
-.uk-section-secondary:not(.uk-preserve-color) .uk-logo > :not(picture):not(.uk-logo-inverse):not(:only-of-type),
-.uk-tile-primary:not(.uk-preserve-color) .uk-logo > picture:not(:only-of-type) > :not(.uk-logo-inverse),
-.uk-tile-primary:not(.uk-preserve-color) .uk-logo > :not(picture):not(.uk-logo-inverse):not(:only-of-type),
-.uk-tile-secondary:not(.uk-preserve-color) .uk-logo > picture:not(:only-of-type) > :not(.uk-logo-inverse),
-.uk-tile-secondary:not(.uk-preserve-color) .uk-logo > :not(picture):not(.uk-logo-inverse):not(:only-of-type),
-.uk-card-primary.uk-card-body .uk-logo > picture:not(:only-of-type) > :not(.uk-logo-inverse),
-.uk-card-primary.uk-card-body .uk-logo > :not(picture):not(.uk-logo-inverse):not(:only-of-type),
-.uk-card-primary > :not([class*="uk-card-media"]) .uk-logo > picture:not(:only-of-type) > :not(.uk-logo-inverse),
-.uk-card-primary > :not([class*="uk-card-media"]) .uk-logo > :not(picture):not(.uk-logo-inverse):not(:only-of-type),
-.uk-card-secondary.uk-card-body .uk-logo > picture:not(:only-of-type) > :not(.uk-logo-inverse),
-.uk-card-secondary.uk-card-body .uk-logo > :not(picture):not(.uk-logo-inverse):not(:only-of-type),
-.uk-card-secondary > :not([class*="uk-card-media"]) .uk-logo > picture:not(:only-of-type) > :not(.uk-logo-inverse),
-.uk-card-secondary > :not([class*="uk-card-media"]) .uk-logo > :not(picture):not(.uk-logo-inverse):not(:only-of-type),
-.uk-overlay-primary .uk-logo > picture:not(:only-of-type) > :not(.uk-logo-inverse),
-.uk-overlay-primary .uk-logo > :not(picture):not(.uk-logo-inverse):not(:only-of-type),
-.uk-offcanvas-bar .uk-logo > picture:not(:only-of-type) > :not(.uk-logo-inverse),
-.uk-offcanvas-bar .uk-logo > :not(picture):not(.uk-logo-inverse):not(:only-of-type) {
+.uk-light .uk-logo:has(.uk-logo-inverse) > :not(picture:has(.uk-logo-inverse)):not(.uk-logo-inverse),
+.uk-section-primary:not(.uk-preserve-color) .uk-logo:has(.uk-logo-inverse) > :not(picture:has(.uk-logo-inverse)):not(.uk-logo-inverse),
+.uk-section-secondary:not(.uk-preserve-color) .uk-logo:has(.uk-logo-inverse) > :not(picture:has(.uk-logo-inverse)):not(.uk-logo-inverse),
+.uk-tile-primary:not(.uk-preserve-color) .uk-logo:has(.uk-logo-inverse) > :not(picture:has(.uk-logo-inverse)):not(.uk-logo-inverse),
+.uk-tile-secondary:not(.uk-preserve-color) .uk-logo:has(.uk-logo-inverse) > :not(picture:has(.uk-logo-inverse)):not(.uk-logo-inverse),
+.uk-card-primary.uk-card-body .uk-logo:has(.uk-logo-inverse) > :not(picture:has(.uk-logo-inverse)):not(.uk-logo-inverse),
+.uk-card-primary > :not([class*="uk-card-media"]) .uk-logo:has(.uk-logo-inverse) > :not(picture:has(.uk-logo-inverse)):not(.uk-logo-inverse),
+.uk-card-secondary.uk-card-body .uk-logo:has(.uk-logo-inverse) > :not(picture:has(.uk-logo-inverse)):not(.uk-logo-inverse),
+.uk-card-secondary > :not([class*="uk-card-media"]) .uk-logo:has(.uk-logo-inverse) > :not(picture:has(.uk-logo-inverse)):not(.uk-logo-inverse),
+.uk-overlay-primary .uk-logo:has(.uk-logo-inverse) > :not(picture:has(.uk-logo-inverse)):not(.uk-logo-inverse),
+.uk-offcanvas-bar .uk-logo:has(.uk-logo-inverse) > :not(picture:has(.uk-logo-inverse)):not(.uk-logo-inverse) {
   display: none;
 }
 .uk-light .uk-logo-inverse,
