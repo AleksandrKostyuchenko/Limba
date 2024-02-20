@@ -7,15 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./dist/css/uikit.min.css">
     <link rel="stylesheet" href="./dist/css/main.css">
-    <link href="./dist/fonts/Inter/static/Inter-Regular.ttf">
-    <link href="./dist/fonts/Inter/static/Inter-SemiBold.ttf">
     <link href="./dist/fonts/Manrope/static/Manrope-Bold.ttf">
     <link href="./dist/fonts/Manrope/static/Manrope-Medium.ttf">
     <link href="./dist/fonts/Manrope/static/Manrope-Regular.ttf">
     <link href="./dist/fonts/Manrope/static/Manrope-ExtraBold.ttf">
     <link href="./dist/fonts/Manrope/static/Manrope-SemiBold.ttf">
-    <link href="./dist/fonts/Graphik/GraphikLCG-Medium.ttf">
-    <link href="./dist/fonts/Graphik/GraphikLCG-Regular.ttf">
     <title>Document</title>
 </head>
 <body>
@@ -30,7 +26,7 @@
 
                     </div>
                     <div class="uk-navbar-center">
-                        <img src="images/logo/logo_dark.png"  alt="">
+                        <img src="images/logo/logo_dark.png" alt="">
                     </div>
                     <div class="uk-navbar-right">
 
@@ -63,66 +59,276 @@
         <hr class="uk-margin-remove-top">
     </header>
     <header class="header-mobile uk-container uk-container-large uk-hidden@m">
-        <div class="">
-            <nav class="uk-navbar-container uk-position-bottom uk-position-fixed uk-overlay uk-overlay-default">
-                <div class="uk-container">
-                    <div uk-navbar class=" uk-flex uk-flex-between">
+        <nav class="uk-navbar-container header-mobile_scroll">
+            <div class="uk-container">
+                <div uk-navbar class=" uk-flex uk-flex-between">
 
-                            <a class="uk-navbar-toggle uk-navbar-toggle-animate" uk-navbar-toggle-icon href="#"></a>
-                            <div uk-dropdown="pos: bottom-right; boundary: !.boundary">
-                                <ul class="uk-nav uk-navbar-dropdown-nav">
-                                    <li class="uk-active"><a href="#">Active</a></li>
-                                    <li><a href="#">Item</a></li>
-                                    <li><a href="#">Item</a></li>
-                                </ul>
-                            </div>
-                            <div class="uk-navbar-center">
-
-                                <ul class="uk-navbar-nav ">
-                                    <li><a href="#"><img src="images/icons/prime_search.svg" alt=""></a></li>
-                                    <li><a href="#"><img src="images/icons/ph_heart-light.svg" alt=""></a></li>
-                                    <li><a href="#"><img src="images/icons/mdi-light_account.svg" alt=""></a></li>
-                                    <li><a href="#"><img src="images/icons/prime_search.svg" alt=""></a></li>
-                                </ul>
-                            </div>
+                    <div>
+                        <a class="uk-navbar-toggle uk-navbar-toggle-animate" uk-navbar-toggle-icon href="#"></a>
+                        <div uk-dropdown="pos: bottom-right; boundary: !.boundary">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li class="uk-active"><a href="#">Active</a></li>
+                                <li><a href="#">Item</a></li>
+                                <li><a href="#">Item</a></li>
+                            </ul>
                         </div>
+                    </div>
+                    <div class="uk-navbar-nav">
 
+                        <ul class="uk-navbar-nav ">
+                            <li><a href="#"><img src="images/icons/prime_search.svg" alt=""></a></li>
+                            <li><a href="#"><img src="images/icons/ph_heart-light.svg" alt=""></a></li>
+                            <li><a href="#"><img src="images/icons/mdi-light_account.svg" alt=""></a></li>
+                            <li><a href="#"><img src="images/icons/prime_search.svg" alt=""></a></li>
+                        </ul>
                     </div>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
-    <sectio>
-        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ducimus ea labore, libero obcaecati possimus
-            reiciendis repellendus sit? Cupiditate delectus ex ipsum. Commodi consectetur doloribus earum et odit
-            ratione reiciendis!
+    <section class="banner-main uk-container uk-container-large">
+        <div class="uk-slider-center banner-main-slider" uk-slider>
+
+            <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
+
+                <ul class="uk-slider-items uk-child-width-1-1 uk-grid">
+                    <li>
+                        <div class="uk-card banner-main-card">
+                            <div class="uk-card-media-top uk-flex uk-flex-center">
+                                <picture>
+                                    <source srcset="images/banner/bannerMain1.png" media="(min-width: 650px)" />
+                                    <img src="images/banner/bannerMain2.png" alt="MDN" />
+                                </picture>
+                            </div>
+                            <div class="uk-card-body uk-flex uk-flex-between">
+                                <div>
+                                    <p class="uk-margin-remove uk-text-secondary">Reconstruction
+                                        treatment</p>
+                                    <span
+                                        class="uk-text-meta">Система молекулярного восстановления волос</span>
+                                </div>
+                                <div>
+                                    <button class="uk-button uk-button-secondary uk-text-lowercase">все продукты
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-card  banner-main-card">
+                            <div class="uk-card-media-top">
+                                <picture>
+                                    <source srcset="images/banner/bannerMain2.png" media="(min-width: 650px)" />
+                                    <img src="images/banner/bannerMain1.png" alt="MDN" />
+                                </picture>
+                            </div>
+                            <div class="uk-card-body uk-flex uk-flex-between">
+                                <div>
+                                    <p class="uk-margin-remove">Reconstruction treatment</p>
+                                    <span
+                                        class="uk-text-meta">Система молекулярного восстановления волос</span>
+                                </div>
+                                <div>
+                                    <button class="uk-button uk-button-secondary uk-text-lowercase">все продукты
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous
+                   uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next
+                   uk-slider-item="next"></a>
+
+            </div>
+
+            <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
         </div>
-        <div>Amet animi distinctio dolorem error excepturi expedita fugit illum incidunt ipsa ipsam iure maxime
-            molestiae natus officia pariatur quia, quis, rerum sapiente sequi, sunt temporibus tenetur unde velit veniam
-            vero.
+    </section>
+    <section class="bestseller uk-container uk-container-large uk-margin-medium-top">
+        <h1 class="uk-text-lowercase uk-heading-medium">бестселлеры</h1>
+        <div class="bestseller-slider uk-slider-container-offset uk-margin-medium-top" uk-slider>
+            <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
+                <ul class="uk-slider-items uk-child-width-1-4@m uk-grid">
+                    <li>
+                        <div class="uk-card">
+                            <div class="uk-card-media-top uk-inline">
+                                <a href="">
+                                    <img class="uk-position-small uk-position-top-right"
+                                         src="images/icons/addFavorite.svg" alt="">
+                                </a>
+                                <img src="images/products/product01.png" width="1800" height="1200" alt="">
+                                <a href="">
+                                    <img class="uk-position-small uk-position-bottom-right"
+                                         src="images/icons/addToBasket.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <span class="uk-text-meta">крем-термозащита</span>
+                                <h4 class="uk-text-lowercase uk-margin-remove-top">LIMBA COSMETICS ORGANIC LINE MANGO
+                                    CREAM
+                                </h4>
+                                <span class="uk-text-meta">90.00 BYN</span>
+                                <p class="uk-margin-remove uk-text-secondary">90.00 BYN</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-card">
+                            <div class="uk-card-media-top uk-inline">
+                                <a href="">
+                                    <img class="uk-position-small uk-position-top-right"
+                                         src="images/icons/addFavorite.svg" alt="">
+                                </a>
+                                <img src="images/products/product02.png" width="1800" height="1200" alt="">
+                                <a href="">
+                                    <img class="uk-position-small uk-position-bottom-right"
+                                         src="images/icons/addToBasket.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <span class="uk-text-meta">крем-термозащита</span>
+                                <h4 class="uk-text-lowercase uk-margin-remove-top">LIMBA COSMETICS ORGANIC LINE MANGO
+                                    CREAM
+                                </h4>
+                                <span class="uk-text-meta">90.00 BYN</span>
+                                <p class="uk-margin-remove uk-text-secondary">90.00 BYN</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-card">
+                            <div class="uk-card-media-top uk-inline">
+                                <a href="">
+                                    <img class="uk-position-small uk-position-top-right"
+                                         src="images/icons/addFavorite.svg" alt="">
+                                </a>
+                                <img src="images/products/product03.png" width="1800" height="1200" alt="">
+                                <a href="">
+                                    <img class="uk-position-small uk-position-bottom-right"
+                                         src="images/icons/addToBasket.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <span class="uk-text-meta">крем-термозащита</span>
+                                <h4 class="uk-text-lowercase uk-margin-remove-top">LIMBA COSMETICS ORGANIC LINE MANGO
+                                    CREAM
+                                </h4>
+                                <span class="uk-text-meta">90.00 BYN</span>
+                                <p class="uk-margin-remove uk-text-secondary">90.00 BYN</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-card">
+                            <div class="uk-card-media-top uk-inline">
+                                <a href="">
+                                    <img class="uk-position-small uk-position-top-right"
+                                         src="images/icons/addFavorite.svg" alt="">
+                                </a>
+                                <img src="images/products/product04.png" width="1800" height="1200" alt="">
+                                <a href="">
+                                    <img class="uk-position-small uk-position-bottom-right"
+                                         src="images/icons/addToBasket.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <span class="uk-text-meta">крем-термозащита</span>
+                                <h4 class="uk-text-lowercase uk-margin-remove-top">LIMBA COSMETICS ORGANIC LINE MANGO
+                                    CREAM
+                                </h4>
+                                <span class="uk-text-meta">90.00 BYN</span>
+                                <p class="uk-margin-remove uk-text-secondary">90.00 BYN</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-card">
+                            <div class="uk-card-media-top uk-inline">
+                                <a href="">
+                                    <img class="uk-position-small uk-position-top-right"
+                                         src="images/icons/addFavorite.svg" alt="">
+                                </a>
+                                <img src="images/products/product01.png" width="1800" height="1200" alt="">
+                                <a href="">
+                                    <img class="uk-position-small uk-position-bottom-right"
+                                         src="images/icons/addToBasket.png" alt="">
+                                </a>
+                            </div>
+                            <div>
+                                <span class="uk-text-meta">крем-термозащита</span>
+                                <h4 class="uk-text-lowercase uk-margin-remove-top">LIMBA COSMETICS ORGANIC LINE MANGO
+                                    CREAM
+                                </h4>
+                                <span class="uk-text-meta">90.00 BYN</span>
+                                <p class="uk-margin-remove uk-text-secondary">90.00 BYN</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href uk-slidenav-previous
+                   uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href uk-slidenav-next
+                   uk-slider-item="next"></a>
+
+            </div>
+
+            <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
         </div>
-        <div>Asperiores blanditiis dolorem facilis id ipsam iste laudantium numquam qui similique voluptatem? Culpa,
-            dolores, vero. Alias consectetur eum placeat rem! Cumque, dolor eaque esse ipsam libero obcaecati reiciendis
-            sequi totam?
+    </section>
+    <section class="lines-products uk-container uk-container-large uk-margin-medium-top">
+        <div class="lines-products-cards uk-child-width-1-2@m uk-text-center uk-grid-small" uk-grid uk-height-match="target: > div > .uk-card">
+            <div>
+                <div class="lines-products-card uk-card uk-card-default uk-card-body uk-flex uk-flex-center">
+                    <div class="uk-width-1-2@m">
+                        <h2 class="uk-text-lowercase uk-margin-remove-bottom">домашний уход.</h2>
+                        <p
+                            class="uk-text-meta uk-margin-small-top">3 линейки для профессионального ухода за волосами в домашних условиях</p>
+                        <img class="lines-products-image" src="images/products/product03.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="lines-products-card uk-card uk-card-default uk-card-body uk-flex uk-flex-center">
+                    <div class="uk-width-1-2@m">
+                        <h2 class="uk-text-lowercase uk-margin-remove-bottom">активаторы.</h2>
+                        <p
+                            class="uk-text-meta uk-margin-small-top">Инновационная линейка активаторов.</p>
+                        <img class="lines-products-image" src="images/products/lineProduct02.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="lines-products-card uk-card uk-card-default uk-card-body uk-flex uk-flex-center">
+                    <div class="uk-width-1-2@m">
+                        <h2 class="uk-text-lowercase uk-margin-remove-bottom">organic line.</h2>
+                        <p
+                            class="uk-text-meta uk-margin-small-top">Профессиональные продукт для интенсивной комплексной реконструкции волос.</p>
+                        <img class="lines-products-image" src="images/products/lineProduct03.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="lines-products-card uk-card uk-card-default uk-card-body uk-flex uk-flex-center">
+                    <div class="uk-width-1-2@m">
+                        <h2 class="uk-text-lowercase uk-margin-remove-bottom">professional line.</h2>
+                        <p
+                            class="uk-text-meta uk-margin-small-top">Система молекулярного восстановления волос.</p>
+                        <img class="lines-products-image" src="images/products/lineProduct04.png" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>Alias, aliquid consectetur exercitationem explicabo id ipsum laboriosam obcaecati odit quibusdam ratione
-            reprehenderit sequi similique temporibus tenetur veritatis vitae voluptate. At consequuntur doloremque harum
-            illum ipsa obcaecati praesentium quasi similique?
-        </div>
-        <div>Accusamus amet dolores ea et illum officia quam quas tempore veritatis voluptas. Adipisci dicta, dolorem
-            eveniet facilis molestiae nemo nulla quae qui quis reiciendis rerum sunt! Accusantium cupiditate error nemo!
-        </div>
-        <div>A aperiam asperiores at cupiditate dolore dolores doloribus exercitationem ipsa laborum quae, quasi, quis
-            quod recusandae saepe sapiente sint temporibus? Accusamus atque, deleniti dolores impedit modi molestias
-            necessitatibus qui ullam?
-        </div>
-        <div>Commodi delectus dolorem excepturi exercitationem? Accusantium aperiam cum cumque debitis, delectus
-            dignissimos dolorum, earum eius et explicabo fugit iste maiores nam placeat ratione repellat repellendus,
-            rerum sunt tempore tenetur? Saepe.
-        </div>
-    </sectio>
+    </section>
 </div>
 
+<script src="dist/js/main.js"></script>
 <script src="dist/js/uikit.min.js"></script>
 </body>
 </html>
