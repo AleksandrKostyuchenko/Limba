@@ -7806,6 +7806,9 @@ iframe[data-uk-cover] {
 .uk-background-secondary {
   background-color: #272727;
 }
+.uk-background-dark {
+  background-color: #000000;
+}
 /* Size
  ========================================================================== */
 .uk-background-cover,
