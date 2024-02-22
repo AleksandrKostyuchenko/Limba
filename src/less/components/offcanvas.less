@@ -25,13 +25,13 @@
 
 @offcanvas-z-index:                             @global-z-index;
 
-@offcanvas-bar-width:                           270px;
+@offcanvas-bar-width:                           960px;//270px;
 @offcanvas-bar-padding-vertical:                20px;
 @offcanvas-bar-padding-horizontal:              20px;
 @offcanvas-bar-background:                      @global-secondary-background;
 @offcanvas-bar-color-mode:                      light;
 
-@offcanvas-bar-width-s:                         350px;
+@offcanvas-bar-width-s:                         960px;
 @offcanvas-bar-padding-vertical-s:              @global-gutter;
 @offcanvas-bar-padding-horizontal-s:            @global-gutter;
 
@@ -92,18 +92,36 @@
     box-sizing: border-box;
     width: @offcanvas-bar-width;
     padding: @offcanvas-bar-padding-vertical @offcanvas-bar-padding-horizontal;
-    background: @offcanvas-bar-background;
+   // background: @offcanvas-bar-background;
+    background-color: #ffffff;
     /* 3 */
     overflow-y: auto;
+    height: 92%;
     .hook-offcanvas-bar();
 }
 
+.uk-offcanvas-bar, .offcanvas-title, .uk-icon-button{
+    color: #000000!important;
+}
+.uk-offcanvas-bar span{
+    color: #7D7D7D!important;
+}
+
+.uk-offcanvas-bar .uk-search-icon{
+    color: #ABABAB!important;
+}
+
+.uk-offcanvas-bar .uk-search-input{
+    background-color: #F6F6F6!important;
+    color: #000000!important;
+}
 /* Phone landscape and bigger */
 @media (min-width: @breakpoint-small) {
 
     .uk-offcanvas-bar {
         left: -@offcanvas-bar-width-s;
-        width: @offcanvas-bar-width-s;
+        //width: @offcanvas-bar-width-s;
+        width: 960px!important;
         padding: @offcanvas-bar-padding-vertical-s @offcanvas-bar-padding-horizontal-s;
     }
 
@@ -201,9 +219,12 @@
 .uk-offcanvas-close {
     position: absolute;
     z-index: @offcanvas-z-index;
-    top: @offcanvas-close-position;
-    right: @offcanvas-close-position;
-    padding: @offcanvas-close-padding;
+    top: 30px;//@offcanvas-close-position;
+    right: 20px;//@offcanvas-close-position;
+    padding: 10px;//@offcanvas-close-padding;
+    color: #000000!important;
+    background-color: #F3F3F3;
+    border-radius: 50px;
     .hook-offcanvas-close();
 }
 
@@ -221,7 +242,7 @@
  * Remove margin from adjacent element
  */
 
-.uk-offcanvas-close:first-child + * { margin-top: 0; }
+.uk-offcanvas-close:first-child + * { margin-top: 0;}
 
 
 /* Overlay
@@ -277,6 +298,9 @@
     overflow-x: hidden;
     /* 1 */
     overflow-x: clip;
+
+    /*modify*/
+    overflow-y: hidden;
 }
 
 
