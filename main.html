@@ -59,11 +59,10 @@
         </nav>
         <hr class="uk-margin-remove-top">
     </header>
-    <header class="header-mobile uk-container uk-container-large  uk-hidden@m">
-        <nav class="uk-navbar-container uk-position-fixed uk-position-bottom uk-position-z-index-high">
+    <header class="header-mobile uk-container uk-container-large uk-hidden@m">
+        <nav class="header-mobile-scroll uk-navbar-container uk-margin">
             <div class="uk-container">
-                <div uk-navbar class=" uk-flex uk-flex-between">
-
+                <div class="uk-child-width-expand uk-flex-middle" uk-navbar uk-grid>
                     <div>
                         <a class="uk-navbar-toggle uk-navbar-toggle-animate" uk-navbar-toggle-icon href="#"></a>
                         <div uk-dropdown="pos: bottom-right; boundary: !.boundary">
@@ -74,12 +73,23 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="uk-navbar-nav">
-
-                        <ul class="uk-navbar-nav ">
+                    <div>
+                        <ul class="uk-navbar-nav">
                             <li><a href="#"><img src="images/icons/prime_search.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="uk-navbar-nav ">
                             <li><a href="#"><img src="images/icons/menuHome.png" alt=""></a></li>
-                            <li><a href="#"><img src="images/icons/mdi-light_account.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="uk-navbar-nav ">
+                            <li><a href="#"><img src="images/icons/ph_heart-light.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="uk-navbar-nav ">
                             <li><a href="#"><img src="images/icons/basket.svg" alt=""></a></li>
                         </ul>
                     </div>
@@ -87,7 +97,7 @@
             </div>
         </nav>
     </header>
-    <section class="banner-main uk-container uk-container-large">
+    <section class="banner-main uk-container uk-container-large uk-margin-small-top">
         <div class="uk-slider-center banner-main-slider" uk-slider>
 
             <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
@@ -123,7 +133,7 @@
                                     <img src="images/banner/bannerMain1.png" alt="MDN" />
                                 </picture>
                             </div>
-                            <div class="uk-card-body uk-flex uk-flex-between">
+                            <div class="uk-card-body uk-flex uk-flex-between uk-flex-wrap">
                                 <div>
                                     <p class="uk-margin-remove">Reconstruction treatment</p>
                                     <span
@@ -348,9 +358,13 @@
     <section class="seminar-block uk-card-default uk-margin-large-top uk-overflow-hidden">
         <div class="uk-container uk-container-large">
             <div class="uk-child-width-1-2@m  uk-position-relative  uk-flex uk-flex-middle" uk-grid>
-                <div class="uk-flex-first@l uk-flex-last@m uk-flex-last">
+                <div class="uk-flex-first@l uk-flex-last@m uk-flex-last uk-visible@m">
                     <img class="uk-position-absolute" src="images/banner/seminar.png" alt="">
                     <canvas width="600" height="600"></canvas>
+                </div>
+                <div class="uk-flex-first@l uk-flex-last@m uk-flex-last uk-hidden@m">
+                    <img  src="images/banner/seminar.png" alt="" uk-contain>
+
                 </div>
                 <div class="uk-position-relative uk-flex-last@l uk-flex-first@m uk-flex-first">
                     <h1 class="uk-text-lowercase uk-heading-medium">онлайн-семинары limba cosmetics</h1>
@@ -448,6 +462,8 @@
             </div>
         </div>
     </footer>
+
+
 </div>
 
 <script src="dist/js/main.js"></script>

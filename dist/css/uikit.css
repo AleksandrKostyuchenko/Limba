@@ -5234,6 +5234,7 @@ ul.uk-nav-sub {
   display: flex;
   /* 1 */
   position: relative;
+  height: 65px;
 }
 /* Container
  ========================================================================== */
@@ -5309,6 +5310,7 @@ ul.uk-nav-sub {
   margin: 0;
   padding: 0;
   list-style: none;
+  align-items: center;
 }
 /*
  * Allow items to wrap into the next line
