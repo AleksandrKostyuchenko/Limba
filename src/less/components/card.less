@@ -63,6 +63,7 @@
 @card-default-color-mode:                      dark;
 
 @card-primary-background:                      @global-primary-background;
+@card-purple-background:                       @global-purple-background;
 @card-primary-color:                           @global-inverse-color;
 @card-primary-title-color:                     @card-primary-color;
 @card-primary-hover-background:                darken(@card-primary-background, 5%);
@@ -276,6 +277,17 @@
     background-color: @card-primary-background;
     color: @card-primary-color;
     .hook-card-primary();
+}
+
+.uk-card-purple {
+    background-color: @card-purple-background;
+    color: @card-primary-color;
+    .hook-card-primary();
+}
+
+.uk-card-purple .uk-card-title {
+    color: @card-primary-title-color;
+    .hook-card-primary-title();
 }
 
 .uk-card-primary .uk-card-title {

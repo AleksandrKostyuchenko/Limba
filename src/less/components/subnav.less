@@ -160,8 +160,10 @@
  ========================================================================== */
 
 .uk-subnav-pill > * > :first-child {
-    padding: @subnav-pill-item-padding-vertical @subnav-pill-item-padding-horizontal;
-    background: @subnav-pill-item-background;
+    //padding: @subnav-pill-item-padding-vertical @subnav-pill-item-padding-horizontal;
+    padding: 12px 35px;
+    //background: @subnav-pill-item-background;
+    background-color: #F4F4F4;
     color: @subnav-pill-item-color;
     .hook-subnav-pill-item();
 }
@@ -175,14 +177,16 @@
 
 /* OnClick */
 .uk-subnav-pill > * > a:active {
-    background-color: @subnav-pill-item-onclick-background;
+   // background-color: @subnav-pill-item-onclick-background;
+    background-color: #191919;
     color: @subnav-pill-item-onclick-color;
     .hook-subnav-pill-item-onclick();
 }
 
 /* Active */
 .uk-subnav-pill > .uk-active > a {
-    background-color: @subnav-pill-item-active-background;
+    //background-color: @subnav-pill-item-active-background;
+    background-color: #191919;
     color: @subnav-pill-item-active-color;
     .hook-subnav-pill-item-active();
 }
