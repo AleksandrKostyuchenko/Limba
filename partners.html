@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./dist/css/uikit.min.css">
+    <link rel="stylesheet" href="./dist/css/main.css">
+    <link href="./dist/fonts/Manrope/static/Manrope-Bold.ttf">
+    <link href="./dist/fonts/Manrope/static/Manrope-Medium.ttf">
+    <link href="./dist/fonts/Manrope/static/Manrope-Regular.ttf">
+    <link href="./dist/fonts/Manrope/static/Manrope-ExtraBold.ttf">
+    <link href="./dist/fonts/Manrope/static/Manrope-SemiBold.ttf">
+    <title>Document</title>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header-desktop uk-container uk-container-large uk-margin-medium-top uk-visible@m">
+        <nav class="header-desktop-top-menu uk-navbar-container">
+            <div class="uk-container">
+                <div uk-navbar>
+                    <div class="header-multi-lang uk-navbar-left">
+                        <div class="uk-flex uk-flex-center uk-flex-middle">
+                            <a class="" href="#">ru</a>
+                        </div>
+                    </div>
+                    <div class="header-desktop-logo uk-navbar-center">
+                        <img src="images/logo/logo_dark.png" alt="">
+                    </div>
+                    <div class="header-desktop-icon-menu uk-navbar-right">
+
+                        <ul class="uk-navbar-nav">
+                            <li>
+                                <a id="clickSearch" href="uk-navbar-toggle"><img src="images/icons/prime_search.svg"
+                                                                                 alt=""></a>
+                                <div class="uk-drop" uk-drop="mode: click; pos: left-center; offset: 0">
+                                    <form class="uk-search uk-search-navbar uk-width-1-1">
+                                        <input class="uk-search-input" type="search" placeholder="поиск"
+                                               aria-label="Search" autofocus>
+                                    </form>
+                                </div>
+                            </li>
+                            <li><a href="#"><img src="images/icons/ph_heart-light.svg" alt=""></a></li>
+                            <li><a href="#"><img src="images/icons/mdi-light_account.svg" alt=""></a></li>
+                            <li><a href="#"><img src="images/icons/basket.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="header-desktop-bottom-menu uk-navbar-container uk-margin-medium-top" uk-navbar>
+            <div class="header-desktop-list uk-navbar-center">
+
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="#">главная</a></li>
+                    <li><a href="#">каталог</a></li>
+                    <li><a href="#">обучение</a></li>
+                    <li><a href="#">контакты</a></li>
+                    <li><a href="#">где купить?</a></li>
+                    <li><a href="#">салоны</a></li>
+                    <li><a href="#">полезное</a></li>
+                </ul>
+
+            </div>
+        </nav>
+        <hr class="uk-margin-remove-top">
+    </header>
+    <header class="header-mobile uk-container uk-container-large uk-hidden@m">
+        <nav class="header-mobile-scroll uk-navbar-container uk-margin">
+            <div class="uk-container">
+                <div class="uk-child-width-expand uk-flex-middle" uk-navbar uk-grid>
+                    <div class="header-mobile-main-menu">
+                        <a href="#offcanvas-usage" uk-toggle href="#"><img src="images/icons/menuBurger.svg"></a>
+                        <div id="offcanvas-usage" uk-offcanvas>
+                            <div class="uk-offcanvas-bar">
+                                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                                <h1 class="offcanvas-title uk-text-lowercase uk-heading-medium">меню</h1>
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li>
+                                        <a href="#">каталог</a>
+                                        <div class="uk-navbar-dropdown">
+                                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                                <li class="uk-active"><a href="#">Active</a></li>
+                                                <li><a href="#">Item</a></li>
+                                                <li class="uk-nav-header">Header</li>
+                                                <li><a href="#">Item</a></li>
+                                                <li><a href="#">Item</a></li>
+                                                <li class="uk-nav-divider"></li>
+                                                <li><a href="#">Item</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">салоны</a></li>
+                                    <li><a href="#">обучение</a></li>
+                                    <li><a href="#">контакты</a></li>
+                                    <li><a href="#">полезное</a></li>
+                                </ul>
+                                <hr class="uk-background-secondary">
+                                <div class="profile-user header-mobile uk-flex uk-flex-middle uk-margin-small-top">
+                                    <div class="profile-user-image uk-margin-small-right">
+                                        <img src="images/icons/iconUser.png" alt="">
+                                    </div>
+                                    <div class="profile-user-data uk-flex uk-flex-column">
+                                        <div class="uk-flex">
+                                            <h3 class="offcanvas-title uk-margin-remove-bottom">Виктория Пугачева</h3>
+                                            <a href="" class="uk-icon-button" uk-icon="pencil"></a>
+                                        </div>
+                                        <div>
+                                            <span class="uk-text-lowercase">puggavika@gmail.com</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile-social uk-position-small uk-position-bottom">
+                                    <div class="uk-margin-medium-bottom">
+                                        <img src="images/logo/logo_dark.png" alt="">
+                                    </div>
+                                    <div class="footer-social uk-flex uk-flex-middle">
+                                        <a href="">
+                                            <img src="images/social/instDark.svg" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img src="images/social/vkDark.svg" alt="">
+                                        </a>
+                                        <a href="">
+                                            <img src="images/social/tiktokDark.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-mobile-search">
+                        <ul class="uk-navbar-nav">
+                            <li>
+                                <a href="#offcanvas-search" uk-toggle><img src="images/icons/prime_search.svg"
+                                                                           alt=""> </a>
+                                <div id="offcanvas-search" uk-offcanvas>
+                                    <div class="uk-offcanvas-bar">
+                                        <button class="uk-offcanvas-close" type="button" uk-close></button>
+                                        <h1 class="offcanvas-title uk-text-lowercase uk-heading-medium">поиск</h1>
+                                        <div class="uk-margin" style="color:black">
+                                            <form class="uk-search uk-search-default">
+                                                <a class="uk-margin-small-right" href="" uk-search-icon></a>
+                                                <input class="uk-search-input" type="search" placeholder="Search"
+                                                       aria-label="Search">
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-mobile-home">
+                        <ul class="uk-navbar-nav">
+                            <li><a href="#"><img src="images/icons/menuHome.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="header-mobile-favorite">
+                        <ul class="uk-navbar-nav ">
+                            <li><a href="#"><img src="images/icons/ph_heart-light.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="header-mobile-basket">
+                        <ul class="uk-navbar-nav ">
+                            <li><a href="#"><img src="images/icons/basket.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="partners uk-container uk-container-large">
+        <h1 class="uk-text-lowercase uk-heading-medium">партнеры</h1>
+        <ul class="uk-subnav uk-subnav-pill uk-margin-medium-top" uk-switcher>
+            <li><a class="uk-text-lowercase" href="#">маркетплейсы</a></li>
+            <li><a class="uk-text-lowercase" href="#">партнеры</a></li>
+            <li><a class="uk-text-lowercase" href="#">магазины Flario</a></li>
+        </ul>
+        <ul class="uk-switcher uk-margin-medium-top">
+            <li class="marketplaces-list">
+                <div class="uk-child-width-1-6@m" uk-grid uk-height-match="target: > div > a > .uk-card">
+                    <div>
+                        <a href="">
+                            <div class="uk-card uk-card-body uk-card-small uk-card-default uk-flex uk-flex-center uk-flex-middle">
+                                <img src="images/marketplace/wb.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <div class="uk-card uk-card-body uk-card-small uk-card-default uk-flex uk-flex-center uk-flex-middle">
+                                <img src="images/marketplace/ozon.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <div class="uk-card uk-card-body uk-card-small uk-card-default uk-flex uk-flex-center uk-flex-middle">
+                                <img src="images/marketplace/goldApple.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <div class="uk-card uk-card-body uk-card-small uk-card-default uk-flex uk-flex-center uk-flex-middle">
+                                <img src="images/marketplace/letyal.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <div class="uk-card uk-card-body uk-card-small uk-card-default uk-flex uk-flex-center uk-flex-middle">
+                                <img src="images/marketplace/yandexMarket.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <div class="uk-card uk-card-body uk-card-small uk-card-default uk-flex uk-flex-center uk-flex-middle">
+                                <img src="images/marketplace/sber.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <div class="uk-card uk-card-body uk-card-small uk-card-default uk-flex uk-flex-center uk-flex-middle">
+                                <img src="images/marketplace/talent.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </li>
+            <li class="partners-list">Hello again! <a href="#" uk-switcher-item="next">Next item</a></li>
+            <li class="our-magazine">Bazinga! <a href="#" uk-switcher-item="previous">Previous item</a></li>
+        </ul>
+    </section>
+
+    <footer class="footer uk-background-dark">
+        <div class="uk-container uk-container-large">
+            <div class="uk-child-width-expand@m uk-light" uk-grid>
+                <div class="footer-documents uk-card uk-card-body">
+                    <ul class="uk-list">
+                        <li><a href="">Публичный договор</a></li>
+                        <li><a href="">Политика конфиденциальности</a></li>
+                        <li><a href="">Контакты</a></li>
+                        <li><a href="">FAQ</a></li>
+                    </ul>
+                    <div class="footer-social uk-flex uk-flex-middle">
+                        <a href="">
+                            <img src="images/social/instDark.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="images/social/vkDark.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="images/social/tiktokDark.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-phone uk-card uk-card-body uk-width-1-5@m">
+                    <ul class="uk-list">
+                        <li><a href="tel:+375 (25) 736-70-70">+375 (25) 736-70-70</a></li>
+                        <li><a href="tel:+375 (29) 736-70-70">+375 (29) 736-70-70</a></li>
+                        <li><a href="tel:+375 (44) 736-70-70">+375 (44) 736-70-70</a></li>
+                    </ul>
+                    <p>Время работы офиса: 09:00–18:00 по будням</p>
+                </div>
+                <div class="footer-info uk-card uk-card-body uk-width-1-2@m">
+                    <p>Название компании: ООО "АЛЬНИЛАМ" УНП 691993078 Адрес: 220007, Республика Беларусь, г. Минск,
+                        Фабрициуса 2-1, Свидетельство о государственной регистрации № 691993078 от 04.07.2018 выдано
+                        Минским горисполкомом Интернет-магазин зарегистрирован в Торговом реестре РБ 564128 от
+                        07.09.2023. р/с BY97ALFA30122A74980010270000 в BYN в ЗАО «Альфа-Банк», ул. Сурганова, 43-47,
+                        Платежные реквизиты: БИК- ALFABY2X, УНП 101541947, ОКПО 37526626. Режим работы 10:00 - 20:00</p>
+                </div>
+            </div>
+            <hr class="uk-background-muted">
+            <div class="footer-info-payment uk-flex uk-flex-middle uk-flex-between uk-margin-small-bottom">
+                <div>
+                    <img src="images/logo/logoFooterDark.png" alt="">
+                </div>
+                <div class="uk-width-1-4@m">
+                    <img src="images/pictures/onsite.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</div>
+
+<script src="dist/js/main.js"></script>
+<script src="dist/js/uikit.min.js"></script>
+<script src="dist/js/uikit-icons.js"></script>
+</body>
+</html>
